@@ -47,6 +47,8 @@ body {
   font-weight: 500;
   font-size: 0.9rem;
 }
+
+
 /* ===================== ABOUT ME ===================== */
 .about-me {
   background: linear-gradient(135deg, #67b99a 0%, #99e2b4 100%);
@@ -85,11 +87,11 @@ body {
   margin-bottom: 20px;
 }
 
-/* ===================== EDUCATION LIST WITHOUT BULLETS ===================== */
+/* Remove bullets from education list */
 .about-me ul,
 .about-me ul li {
-  list-style: none !important;  /* remove bullets forcefully */
-  padding-left: 0 !important;   /* remove default indentation */
+  list-style: none !important;
+  padding-left: 0 !important;
   margin-left: 0 !important;
 }
 
@@ -98,7 +100,7 @@ body {
   font-size: 1rem;
 }
 
-/* ===================== HOME PAGE BUTTONS / TABS ===================== */
+/* ===================== HOME PAGE BUTTONS / SOLID SLAB TABS ===================== */
 .home-buttons {
   text-align: center;
   margin-top: 30px;
@@ -106,29 +108,32 @@ body {
 
 .btn-tab {
   display: inline-block;
-  background: transparent;
-  border: 2px solid #fff;
-  color: #ffeb3b;       /* change button text color here */
-  padding: 12px 30px;
-  margin: 10px 5px;
-  border-radius: 25px;
-  font-weight: 500;
-  text-decoration: none;
+  background: #ffffff;        /* solid white background */
+  color: #56ab91;             /* text color matching your gradient theme */
+  padding: 12px 35px;
+  margin: 10px 8px;
+  border-radius: 12px;        /* slab-style rounded corners */
+  font-weight: 600;
   font-size: 1rem;
+  text-decoration: none;
   transition: 0.3s;
   cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* subtle shadow */
+  border: none;               /* remove outline */
 }
 
 .btn-tab:hover {
-  background: #fff;
-  color: #56ab91; /* text color on hover */
+  background: #56ab91;        /* gradient color fill on hover */
+  color: #fff;                /* text turns white on hover */
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
 /* ===================== CONTACT EMAIL ===================== */
 .contact p,
 .contact span,
 .contact a {
-  color: #fff !important;       /* white text even if default blue */
+  color: #fff !important;       /* white text */
   font-weight: 500;
   text-decoration: none;
 }
@@ -139,29 +144,19 @@ body {
   color: #e0f0e5;
 }
 
-/* ===================== HOME PAGE BUTTONS / SLAB TABS ===================== */
-.btn-tab {
-  display: inline-block;
-  background: #ffffff;       /* solid white background */
-  color: #56ab91;            /* text color matching your gradient */
-  padding: 12px 30px;
-  margin: 10px 5px;
-  border-radius: 8px;        /* slightly rounded slab style */
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: 0.3s;
-  cursor: pointer;
-  border: none;              /* remove outline border */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* subtle shadow */
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+  .about-me {
+    padding: 30px 5%;
+  }
+
+  .btn-tab {
+    padding: 10px 20px;
+    margin: 8px 5px;
+    font-size: 0.9rem;
+  }
 }
 
-.btn-tab:hover {
-  background: #56ab91;       /* fill with gradient color on hover */
-  color: #fff;               /* text becomes white */
-  transform: translateY(-2px); /* small lift effect */
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
 
 
 
