@@ -85,9 +85,10 @@ body {
   margin-bottom: 20px;
 }
 
+/* Remove bullets from list */
 .about-me ul {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style: none;   /* removes bullets */
+  padding-left: 0;    /* remove default padding */
 }
 
 .about-me li {
@@ -105,7 +106,7 @@ body {
   display: inline-block;
   background: transparent;
   border: 2px solid #fff;
-  color: #fff;
+  color: #ffeb3b;       /* change button text color here */
   padding: 12px 30px;
   margin: 10px 5px;
   border-radius: 25px;
@@ -118,7 +119,7 @@ body {
 
 .btn-tab:hover {
   background: #fff;
-  color: #56ab91; /* matches your gradient theme */
+  color: #56ab91; /* text color on hover */
 }
 
 /* ===================== CONTACT EMAIL ===================== */
@@ -130,7 +131,6 @@ body {
   text-decoration: none;
 }
 
-/* Optional: subtle hover effect for any contact email text */
 .contact p:hover,
 .contact span:hover,
 .contact a:hover {
@@ -149,6 +149,7 @@ body {
     font-size: 0.9rem;
   }
 }
+
 
 /* ===================== HERO ===================== */
 .hero {
