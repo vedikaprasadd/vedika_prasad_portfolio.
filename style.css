@@ -47,6 +47,108 @@ body {
   font-weight: 500;
   font-size: 0.9rem;
 }
+/* ===================== ABOUT ME ===================== */
+.about-me {
+  background: linear-gradient(135deg, #67b99a 0%, #99e2b4 100%);
+  color: #fff;
+  padding: 50px 8%;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 50px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-me:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.about-me h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(255,255,255,0.4);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about-me h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-me p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-me ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-me li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* ===================== HOME PAGE BUTTONS / TABS ===================== */
+.home-buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-tab {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 12px 30px;
+  margin: 10px 5px;
+  border-radius: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-tab:hover {
+  background: #fff;
+  color: #56ab91; /* matches your gradient theme */
+}
+
+/* ===================== CONTACT EMAIL ===================== */
+.contact p,
+.contact span,
+.contact a {
+  color: #fff !important;       /* white text even if default blue */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Optional: subtle hover effect for any contact email text */
+.contact p:hover,
+.contact span:hover,
+.contact a:hover {
+  color: #e0f0e5;
+}
+
+/* ===================== RESPONSIVE ABOUT ME & BUTTONS ===================== */
+@media (max-width: 768px) {
+  .about-me {
+    padding: 30px 5%;
+  }
+
+  .btn-tab {
+    padding: 10px 20px;
+    margin: 8px 3px;
+    font-size: 0.9rem;
+  }
+}
 
 /* ===================== HERO ===================== */
 .hero {
