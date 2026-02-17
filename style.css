@@ -265,8 +265,19 @@ body {
   color: #f0fff8;
   font-size: 14px;
 }
+/* ===== MOBILE RESPONSIVE FIX ===== */
+@media (max-width: 768px) {
 
+  .skill-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .skill-card {
+    width: 90%;
+  }
+
+}
 
 /* ===================== EXPERIENCE ===================== */
 .experience {
