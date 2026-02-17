@@ -47,6 +47,33 @@ body {
   font-weight: 500;
   font-size: 0.9rem;
 }
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* space between buttons */
+  flex-wrap: wrap;
+}
+
+.btn-hero {
+  display: inline-block;
+  background: #56ab91;       /* solid green matching your theme */
+  color: #fff;               /* white text */
+  padding: 12px 30px;        /* comfortable padding */
+  border-radius: 25px;       /* rounded pill-style edges */
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* subtle shadow */
+  transition: 0.3s;
+}
+
+.btn-hero:hover {
+  background: #248277;       /* darker shade on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
 
 
 /* ===================== ABOUT ME ===================== */
