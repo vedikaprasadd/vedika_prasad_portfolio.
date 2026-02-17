@@ -85,10 +85,12 @@ body {
   margin-bottom: 20px;
 }
 
-/* Remove bullets from list */
-.about-me ul {
-  list-style: none;   /* removes bullets */
-  padding-left: 0;    /* remove default padding */
+/* ===================== EDUCATION LIST WITHOUT BULLETS ===================== */
+.about-me ul,
+.about-me ul li {
+  list-style: none !important;  /* remove bullets forcefully */
+  padding-left: 0 !important;   /* remove default indentation */
+  margin-left: 0 !important;
 }
 
 .about-me li {
@@ -137,18 +139,30 @@ body {
   color: #e0f0e5;
 }
 
-/* ===================== RESPONSIVE ABOUT ME & BUTTONS ===================== */
-@media (max-width: 768px) {
-  .about-me {
-    padding: 30px 5%;
-  }
-
-  .btn-tab {
-    padding: 10px 20px;
-    margin: 8px 3px;
-    font-size: 0.9rem;
-  }
+/* ===================== HOME PAGE BUTTONS / SLAB TABS ===================== */
+.btn-tab {
+  display: inline-block;
+  background: #ffffff;       /* solid white background */
+  color: #56ab91;            /* text color matching your gradient */
+  padding: 12px 30px;
+  margin: 10px 5px;
+  border-radius: 8px;        /* slightly rounded slab style */
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;              /* remove outline border */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* subtle shadow */
 }
+
+.btn-tab:hover {
+  background: #56ab91;       /* fill with gradient color on hover */
+  color: #fff;               /* text becomes white */
+  transform: translateY(-2px); /* small lift effect */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
 
 
 /* ===================== HERO ===================== */
