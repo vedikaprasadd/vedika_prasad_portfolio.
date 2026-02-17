@@ -224,33 +224,48 @@ body {
 }
 
 /* ===================== PROJECTS ===================== */
-#projects {
-  padding: 60px 20px;
+.projects {
+  padding: 80px 10%;
   text-align: center;
+  background: linear-gradient(180deg, #99e2b4 0%, #56ab91 100%);
 }
 
-.projects-row {
+.projects h2 {
+  color: #036666;
+  margin-bottom: 30px;
+}
+
+.project-grid {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  gap: 25px;
 }
 
 .project-card {
-  width: 32%;
-  background: #ffffff;
+  background: linear-gradient(180deg, #88d4ab, #67b99a);
   padding: 25px;
+  width: 250px;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  color: #fff;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(180deg, #78c6a3, #56ab91);
 }
 
 .project-card h3 {
+  color: #fff;
   margin-bottom: 10px;
 }
 
 .project-card p {
+  color: #f0fff8;
   font-size: 14px;
-  color: #555;
 }
+
 
 
 /* ===================== EXPERIENCE ===================== */
